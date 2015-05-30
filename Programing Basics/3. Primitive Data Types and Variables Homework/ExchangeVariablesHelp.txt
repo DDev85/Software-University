@@ -1,0 +1,38 @@
+A Binary XOR Swap with a detailed example :
+
+XOR Truth Table :
+
+a b a^b
+0 0  0
+0 1  1
+1 0  1
+1 1  0
+
+Input :
+
+a = 4;
+b = 6;
+
+Step 1 : a = a ^ b
+
+a   : 0100 
+b   : 0110 
+a^b : 0010 = 2 = a
+
+Step 2 : b = a ^ b
+
+a   : 0010 
+b   : 0110 
+a^b : 0100 = 4 = b
+
+Step 3 : a = a ^ b
+
+a   : 0010
+b   : 0100
+a^b : 0110 = 6 = a
+
+Output :
+
+a = 6;
+b = 4;
+
