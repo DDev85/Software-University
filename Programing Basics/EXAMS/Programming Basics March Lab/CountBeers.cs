@@ -15,7 +15,7 @@ namespace CountBeers
                 else if (words[1] == "beers") { beers += int.Parse(words[0]); }
                 input = Console.ReadLine();
             }
-            if (beers % 20 > 0 && beers >= 20) { stacks += beers / 20; beers = beers % 20; }
+            stacks += beers / 20; beers = beers % 20; 
             Console.WriteLine("{0} stacks + {1} beers", stacks, beers);
             
         }
